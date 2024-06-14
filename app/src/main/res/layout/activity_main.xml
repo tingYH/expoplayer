@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.example.exoplayerdemo.wedget.BannerIndicatorView
+        android:id="@+id/biv_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_24"
+        app:indicator_margins="@dimen/dp_3"
+        app:indicator_normal_drawable="@drawable/design_shape_transp_radius4"
+        app:indicator_normal_height="@dimen/dp_5"
+        app:indicator_normal_width="@dimen/dp_5"
+        app:indicator_select_drawable="@drawable/design_shape_white_radius4"
+        app:indicator_select_height="@dimen/dp_5"
+        app:indicator_select_width="@dimen/dp_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

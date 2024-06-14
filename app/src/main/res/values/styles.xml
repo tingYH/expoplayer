@@ -1,0 +1,94 @@
+<resources>
+
+
+
+    <style name="Theme.App.TitleBar" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@color/blue_grey_800</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="dialog_style" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@drawable/toumingde</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@drawable/toumingde</item>
+    </style>
+
+    <!--该样式是横线-->
+    <style name="TextAppearance.line_h2" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#e2e2e2</item>
+    </style>
+
+    <!--dialog去阴影-->
+    <style name="dialogNoBg">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="cs_dialog_style" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@drawable/toumingde</item>
+        <item name="android:backgroundDimEnabled">false</item><!--activity不变暗-->
+    </style>
+
+    <style name="Dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+
+        <!--是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="outlinedButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
+        <item name="strokeColor">@color/blue_600</item>
+
+        <item name="strokeWidth">@dimen/mtrl_btn_stroke_size</item>
+    </style>
+
+    <!-- banner indicator -->
+    <declare-styleable name="BannerIndicatorView">
+        <!-- 显示多少个 indicator -->
+        <attr name="indicator_count" format="integer" />
+        <!-- indicator 宽高 -->
+        <attr name="indicator_select_width" format="dimension" />
+        <attr name="indicator_select_height" format="dimension" />
+        <attr name="indicator_normal_width" format="dimension" />
+        <attr name="indicator_normal_height" format="dimension" />
+        <!-- indicator 之间边距 -->
+        <attr name="indicator_margins" format="dimension" />
+        <!-- indicator 颜色 -->
+        <attr name="indicator_select_drawable" format="reference" />
+        <attr name="indicator_normal_drawable" format="reference" />
+
+    </declare-styleable>
+</resources>
